@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Product</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="search_upc_div">
+            <form class="search_upc_form" method="get">
+                <h2 class="search_upc_header">Search Product by UPC Code</h2>
+                <input class="search_upc_input" type="text" name="upc_code" placeholder="Enter UPC code" value="{{ query }}">
+                <button class="search_upc_button" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="result">
+            {% if product %}
+                <h3>Product Found:</h3>
+                <p><b>Name:</b> {{ product.name }}</p>
+                <p><b>Price:</b> ${{ product.price }}</p>
+            {% elif error %}
+                <p class="error">{{ error }}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

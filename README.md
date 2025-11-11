@@ -24,13 +24,13 @@ python main.py
 Models:
 -------
 Product:
-    - upc_code(charfield): Stores the upc code of the product.
-    - name(charfield): Stores the name of the product.
-    - price(decimalfield): Stores the price of the product.
+- upc_code(charfield): Stores the upc code of the product.
+- name(charfield): Stores the name of the product.
+- price(decimalfield): Stores the price of the product.
 
 (didn't touch the default models and database instantiations)
 User:
-    - name(charfield): Name of the user.
+- name(charfield): Name of the user.
 
 View:
 ------

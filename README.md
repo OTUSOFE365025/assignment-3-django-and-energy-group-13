@@ -6,7 +6,7 @@ mkdir myproject; cd myproject
 ```
 Create a virtual environment and install django
 ```
-python -m venv venv; source venv/bin/activate; pip install django
+python -m venv venv; source venv/bin/activate; pip install django flask
 ```
 Download this project template from GitHub
 ```
@@ -47,3 +47,19 @@ styles.css: Used to style the search.html template.
 Flask Server:
 -------------
 A flask server is run in main.py and our view is routed to the base url.
+
+Testing:
+--------
+There is dummy table data along with a for loop to iterate through the product table in main.py commented out under Populate product table.
+
+Running the website:
+![alt text](screendump/server_running.png)
+
+Base website:
+![alt text](screendump/base_website.png)
+
+Upc code not found:
+![alt text](screendump/no_upc.png)
+
+Upc code found:
+![alt text](screendump/upc.png)
